@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>John Doe - Designer</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" href="font-awesome/font-awesome.min.css">
+
+	<style type="text/css">
+		body {
+			background-color: #009070;
+			background-image: url(bg.png);
+			margin: 0;
+		}
+
+		.paper {
+			height: 500px;
+			width: 950px;
+			background-color: #202020;
+			background-image: url(bg2.png);
+			border-radius: 16px;
+			box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+			transform: translateY(calc(50vh - 250px))
+				translateX(calc(50vw - 475px));
+		}
+
+		.photo {
+			width: 300px;
+			height: 500px;
+			background-image: url(photo.jpg);
+			background-size: cover;
+			background-position: center;
+			border-radius: 16px 0px 0px 16px;
+			float: left;
+		}
+
+		.content {
+			width: calc(650px - 100px);
+			float: left;
+			margin: 50px;
+			color: #fff;
+			font-family: arial;
+		}
+
+		.name {
+			font-size: 72px;
+			font-weight: bold;
+			margin-bottom: 8px;
+		}
+
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+			font-style: italic;
+			margin-bottom: 32px;
+		}
+
+		.description {
+			font-size: 18px;
+		}
+
+		.buttons {
+			width: calc(650px - 100px);
+			float: left;
+			margin: 0px 50px;
+		}
+
+		a {
+			height: 36px;
+			width: 36px;
+			background-color: #fff;
+			border-radius:50%;
+			float: left;
+			margin-right: 16px;
+		}
+
+		.fa {
+			margin: 10px 10px;
+		}
+
+		.fa-twitter {
+			color: #1DA1F2;
+		}
+
+		.fa-linkedin {
+			color: #0077B5;
+		}
+
+		.fa-youtube-play {
+			color: #FF0000;
+		}
+
+		.fa-envelope {
+			color: #24292E;
+		}
+
+		.fa-phone {
+			color: #25D366;
+		}
+
+
+		/* animation */
+
+		.photo {
+			transition: all 0.5s ease-in-out;
+		}
+
+		.photo:hover {
+			transform: rotate(360deg)
+				scale(1.25, 1.25);
+			box-shadow: 0 18px 24px rgba(0, 0, 0, 0.5);
+			border-radius:16px;
+		}
+
+		a {
+			transition: all 0.5s ease-in-out;
+		}
+
+		a:hover {
+			transform: translateY(-9px) scale(1.25, 1.25);
+			box-shadow: 0 18px 24px rgba(0, 0, 0, 0.5);
+		}
+	</style>
+</head>
+<body>
+	<div class="paper">
+		<div class="photo"></div>
+		<div class="content">
+			<div class="name">John Doe</div>
+			<div class="title">Designer</div>
+			<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, tellus in sodales molestie, ante tortor imperdiet tellus, dapibus semper elit sem eu mi. Mauris cursus ex at tristique mattis. Integer risus massa, placerat eu maximus et, consequat in ligula. Nulla eget volutpat metus.</div>
+		</div>
+		<div class="buttons">
+			<a href="https://twitter.com/hifebriansyah" class="button">
+				<i class="fa fa-twitter"></i>
+			</a>
+			<a href="https://linkedin.com/muhammad-febriansyah" class="button">
+				<i class="fa fa-linkedin"></i>
+			</a>
+			<a href="https://youtube.com/channel/UCaW6-tkir5lUNJglD3Y50-Q" class="button">
+				<i class="fa fa-youtube-play"></i>
+			</a>
+			<a href="mailto:hifebriansyah@gmail.com" class="button">
+				<i class="fa fa-envelope"></i>
+			</a>
+			<a href="tel:+6208989090112" class="button">
+				<i class="fa fa-phone"></i>
+			</a>
+		</div>
+	</div>
+</body>
+</html>
